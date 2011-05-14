@@ -20,7 +20,7 @@ Here's a sample setup:
 
     app.configure(function(){
       app.set('views', __dirname + '/views');
-      ...
+      // etc.
     });
 
     override.configure(app, {'overrides': __dirname + 'my_overrides'});
