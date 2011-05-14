@@ -1,0 +1,30 @@
+{
+    "name": "express-template-override",
+    "version": "0.0.1",
+    "description": "Node module that allows you to override the templates in your main Express views directory",
+    "tags": ["express", "templates"],
+    "author": "Mike Cantelon <mcantelon@gmail.com>",
+    "contributors": [],
+    "dependencies": {
+      "express": ">=2.3.4",
+      "walker": ">=0.0.4"
+    },
+    "main": "./lib/express-template-override",
+    "directories": {
+        "lib": "./lib"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/mcantelon/express-template-override.git"
+    },
+    "engines": {
+      "node": ">= 0.4.7"
+    },
+    "bugs": {
+        "web": "http://github.com/mcantelon/express-template-override/issues"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://github.com/mcantelon/express-template-override/blob/master/LICENSE"
+    }]
+}
