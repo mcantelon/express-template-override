@@ -10,8 +10,9 @@ modifying the template distributed with the source. This allows the user to be
 able to reference the original template and more easily upgrade the
 Express-driven application when new versions come out.
 
-It works by allowing a secondary views directory to override the main views
-directory if both directories contain a template file with the same name.
+It works by monkey-patching Express to allow a secondary views directory to
+override the main views directory if both directories contain a template file
+with the same name.
 
 Here's a sample setup:
 
