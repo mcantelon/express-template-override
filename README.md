@@ -1,13 +1,14 @@
 # express-template-override
 
-This Node module is made for those creating web applications using the Express
-Node.js-driven framework.
+This Node module is made for those creating web applications, using the Express
+Node.js-driven framework, that they want others to install and use (blog
+engines, etc.).
 
-This module allows the optional overriding of templates in an Express-driven
-application. This is to allow the user of the Express application to customize
-their installation without modifying the original template code. This allows
-the user to be able to reference the original template and more easily upgrade
-the Express-driven application when new versions come out.
+This module allows the optional overriding of templates. This is to allow the
+admin of the Express application to customize their installation without
+modifying the template distributed with the source. This allows the user to be
+able to reference the original template and more easily upgrade the
+Express-driven application when new versions come out.
 
 It works by allowing a secondary views directory to override the main views
 directory if both directories contain a template file with the same name.
