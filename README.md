@@ -32,3 +32,19 @@ that have the same filename as a template in your main `views` directory then
 the template in `my_overrides` will get used by Express.
 
 This module hasn't been extensively tested, so use at your own risk.
+
+## Installation
+
+Install via npm with:
+
+    npm install express-template-override
+
+## Testing
+
+Install expresso if you haven't already:
+
+    npm install expresso
+
+Change to this project's root directory and enter:
+
+    expresso
