@@ -1,8 +1,8 @@
 var express = require('express')
-  , override = require('../../../lib/express-template-override');
+  , override = require('../../../lib/express-template-override')
+  , View = require('express/lib/view/view').prototype;
 
-// expose app in exports for testing
-var app = module.exports = express.createServer();
+var app = express.createServer();
 
 // Configuration
 
@@ -27,4 +27,27 @@ app.get('/', function(req, res){
 if (!module.parent) {
   app.listen(3000);
   console.log("Express server listening on port %d", app.address().port);
+}
+else {
+
+  // if app being used as a module, export function that returns
+  //  a function that waits for monkey patching to complete
+  module.exports = function() {
+
+    return function(cb) {
+
+      function wait() {
+        process.nextTick(function() {
+          if (!View.patchedByExpressTemplateOverride) {
+            wait();
+          }
+          else {
+            cb(app);
+          }
+        })
+      }
+
+      wait();
+    }
+  }
 }
