@@ -1,6 +1,6 @@
 {
     "name": "express-template-override",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Node module that allows you to override the templates in your main Express views directory",
     "tags": ["express", "templates"],
     "author": "Mike Cantelon <mcantelon@gmail.com>",
