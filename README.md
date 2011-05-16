@@ -31,8 +31,6 @@ With the above setup, if you put any templates in the `my_overrides` directory
 that have the same filename as a template in your main `views` directory then
 the template in `my_overrides` will get used by Express.
 
-This module hasn't been extensively tested, so use at your own risk.
-
 ## Installation
 
 Install via npm with:
