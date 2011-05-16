@@ -8,6 +8,7 @@ var assert = require('assert');
 
 module.exports = {
 
+  /*
   'layout override': function() {
 
     var app = require('./fixtures/two_template_override/app');
@@ -45,5 +46,21 @@ module.exports = {
         assert.includes(res.body, '<p>Normal index.jade</p>');
       }
     );
+  },
+  */
+
+  'partial override': function() {
+
+    var app = require('./fixtures/partial_override/app');
+
+    setTimeout(function() {
+      assert.response(app,
+        { url: '/' },
+        { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8' }},
+        function(res){
+          assert.includes(res.body, '<h1>Override partial</h1>');
+        }
+      );
+    }, 500);
   }
 };
