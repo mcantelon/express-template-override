@@ -25,7 +25,7 @@ Here's a sample setup:
       // etc.
     });
 
-    override.configure(app, {'overrides': __dirname + 'my_overrides'});
+    override.configure(app, {'overrides': __dirname + '/my_overrides'});
 
 With the above setup, if you put any templates in the `my_overrides` directory
 that have the same filename as a template in your main `views` directory then
