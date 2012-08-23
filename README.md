@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/mcantelon/express-template-override.png)](http://travis-ci.org/mcantelon/express-template-override)
 # express-template-override
 
 This Node module is made for those creating web applications, using the Express
